@@ -11,7 +11,8 @@ pkgs.mkShell {
     cmake
     ninja
     pkg-config
-    clang
+    llvmPackages_19.clang-unwrapped
+    llvmPackages_19.llvm
 
     # Dev tools.
     entr
@@ -19,8 +20,6 @@ pkgs.mkShell {
     lcov
     git
     shellcheck
-    # For clangd
-    llvm
 
     # Libs.
     boehmgc
