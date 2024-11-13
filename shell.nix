@@ -22,15 +22,7 @@ pkgs.mkShell {
     shellcheck
 
     # Libs.
-    boehmgc
-    # TODO: CMake fails to find boost::preprocessor.
-    boost
-    cli11
-    fmt
-    immer
-    # TODO: Doesn't have a nix pkg.
-    #libzippp
-    magic-enum
+    boost # TODO: CMake fails to find boost::preprocessor.
     readline
   ];
   shellHook =
